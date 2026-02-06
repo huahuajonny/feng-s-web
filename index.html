@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的数字空间</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="window-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+            </div>
+            <div class="title">root@terminal:~</div>
+        </div>
+        <div class="terminal-body">
+            <div class="output">
+                <p><span class="prompt">visitor@system:~$ </span>whoami</p>
+                <p>欢迎来到冯天晨的数字空间</p>
+                <p><span class="prompt">visitor@system:~$ </span>ls -la /portfolio/</p>
+                <div class="file-list">
+                    <div class="file-item" data-target="photos">photos/</div>
+                    <div class="file-item" data-target="about">about.txt</div>
+                    <div class="file-item" data-target="contact">contact.md</div>
+                </div>
+
+                <div id="photos-content" class="content-section">
+                    <p><span class="prompt">visitor@system:~/photos$ </span>cat gallery.txt</p>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="https://picsum.photos/400/300?random=1" alt="">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://picsum.photos/400/300?random=2" alt="">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://picsum.photos/400/300?random=3" alt="">
+                        </div>
+                    </div>
+                </div>
+                <h3>上面由于你没有给我图片，所以我就随机生成了几张</h3>
+                <div id="about-content" class="content-section">
+                    <div class="text-content">
+                        <h3>关于我</h3>
+                        <p>名字：冯天晨</p>
+                        <p>目标：</p>
+                        <p>生日：</p>
+                        <p>爱好：</p>
+                        <p>座右铭：</p>
+                        <p>做过的项目：</p>
+                        <p>其他：</p>
+                    </div>
+                </div>
+
+                <div id="contact-content" class="content-section">
+                    <div class="contact-links">
+                        <p>Email: <a href="你的邮箱" target="_blank">你的邮箱</a></p>
+                        <p>手机号：18918300374</p>
+                        <p>QQ:</p>
+                        <p>微信：</p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-line">
+                <span class="prompt">visitor@system:~$ </span>
+                <input type="text" class="command-input" placeholder="输入 help 查看命令">
+                <span class="cursor">_</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
